@@ -1,0 +1,75 @@
+.header{
+    height: 19vh;
+    background: lightgrey;
+    margin-bottom: 1vh;
+}
+
+.content{
+        display: flex;
+        flex-wrap: wrap;
+}
+
+.a{
+    height: 60vh;
+    width: 50vw;
+    background: lightgreen;
+}
+
+.b{
+    height: 60vh;
+    width: 25vw;
+    background: green;
+}
+
+.c{
+    height: 60vh;
+    width: 25vw;
+    background: yellow;
+}
+
+.footer{
+    height: 19vh;
+    background: lightgrey;
+    margin-top: 1vh;
+}
+
+/* desktop */
+@media (min-width: 768px) {
+    .b{
+        order: -1;
+    }
+}
+
+/* tablet */
+@media (min-width: 481px) and (max-width: 767px) {
+    .a{
+        height: 40vh;
+        width: 100vw;
+    }
+    .b{
+        height: 20vh;
+        width: 50vw;
+    }
+    .c{
+        height: 20vh;
+        width: 50vw;
+    }
+}
+
+/* mobile 480 */
+@media (max-width: 480px) {
+    .a{
+        height: 30vh;
+        width: 100vw;
+    }
+
+    .b{
+        height: 15vh;
+        width: 100vw;
+    }
+
+    .c{
+        height:15vh;
+        width: 100vw;
+    }
+}
